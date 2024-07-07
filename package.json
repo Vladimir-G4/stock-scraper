@@ -1,5 +1,5 @@
 {
-  "name": "stock-scraper",
+  "name": "stock-data-scraper",
   "version": "0.1.0",
   "description": "An API to scrape stock data like financial metrics, upcoming earnings details, company information, and price performance.",
   "main": "dist/stock_scraper.js",
@@ -13,6 +13,7 @@
     "url": "https://github.com/Vladimir-G4/stock-scraper.git"
   },
   "keywords": [
+    "stock data scraper",
     "stock scraper",
     "stock data",
     "stock API",
