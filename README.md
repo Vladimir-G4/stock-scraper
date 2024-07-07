@@ -1,16 +1,16 @@
-# Stock-Scraper
+# Stock-Data-Scraper
 <img class="giphy-gif-img giphy-img-loaded" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXFub2JzZThzbW1pZGpiajk3aGs4OTdseGZsbnJpMGE0c3R2dDJxeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WDE4UjuhQSWh0GiHQZ/giphy.gif" width="30%" height="30%">
 https://www.npmjs.com/package/stock-data-scraper
 
 ## Overview
-`stock-scraper` is a Node.js (TS) npm package that provides an API to fetch comprehensive stock data by scraping information from TradingView. It offers a straightforward way to retrieve essential financial metrics, upcoming earnings details, company information, and price performance for any publicly traded company.
+`stock-data-scraper` is a Node.js (TS) npm package that provides an API to fetch comprehensive stock data by scraping information from TradingView. It offers a straightforward way to retrieve essential financial metrics, upcoming earnings details, company information, and price performance for any publicly traded company.
 
 ## Installation
 
 To install the package with npm
 
 ```bash
-npm install stock-scraper
+npm install stock-data-scraper
 ```
     
 ## API
@@ -32,7 +32,7 @@ Fetches stock data including upcoming earnings, key statistics, company informat
 ## Usage/Examples
 
 ```typescript
-import { getStockData } from 'stock-scraper';
+import { getStockData } from 'stock-data-scraper';
 
 getStockData('AAPL').then(data => 
     console.log(data)
