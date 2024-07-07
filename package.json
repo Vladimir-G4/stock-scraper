@@ -2,8 +2,8 @@
   "name": "stock-data-scraper",
   "version": "1.0.5",
   "description": "An API to scrape stock data like financial metrics, upcoming earnings details, company information, and price performance.",
-  "main": "dist/stock_scraper.js",
-  "types": "dist/types/stock_scraper.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js"
