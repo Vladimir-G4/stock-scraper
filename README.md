@@ -7,7 +7,7 @@ https://www.npmjs.com/package/stock-data-scraper
 
 ## Installation
 
-Install my-project with npm
+To install the package with npm
 
 ```bash
 npm install stock-scraper
