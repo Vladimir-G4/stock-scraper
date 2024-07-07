@@ -2,14 +2,14 @@ import axios from 'axios';
 import cheerio from 'cheerio';
 
 
-interface EarningsData {
+export interface EarningsData {
     nextReportDate: string | null;
     reportPeriod: string | null;
     epsEstimate: string | null;
     revenueEstimate: string | null;
 }
 
-interface KeyStats {
+export interface KeyStats {
     marketCap: string | null;
     dividendYield: string | null;
     peRatio: string | null;
@@ -19,7 +19,7 @@ interface KeyStats {
     sharesFloat: string | null;
 }
 
-interface About {
+export interface About {
     sector: string | null;
     industry: string | null;
     ceo: string | null;
@@ -30,7 +30,7 @@ interface About {
     description: string | null;
 }
 
-interface Price {
+export interface Price {
     currentPrice: string | null;
     perf1M: string | null;
     perf5D: string | null;
@@ -42,14 +42,14 @@ interface Price {
     change1D: string | null;
 }
 
-interface StockData {
+export interface StockData {
     UpcomingEarnings: EarningsData;
     KeyStats: KeyStats;
     About: About;
     Price: Price;
 }
 
-async function getStockData(ticker: string): Promise<StockData> {
+export async function getStockData(ticker: string): Promise<StockData> {
     
     const url = `https://www.tradingview.com/symbols/${ticker.toUpperCase()}`;
 
