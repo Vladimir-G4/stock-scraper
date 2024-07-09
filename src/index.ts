@@ -51,7 +51,9 @@ export interface StockData {
 
 export async function getStockData(ticker: string): Promise<StockData> {
     
-    const url = `https://www.tradingview.com/symbols/${ticker.toUpperCase()}`;
+    const url = ('https://corsproxy.io/?' + encodeURIComponent(`https://tradingview.com/symbols/${ticker.toUpperCase()}`));
+
+    console.log(url)
 
     try {
         const { data } = await axios.get(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
